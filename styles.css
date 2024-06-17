@@ -77,21 +77,6 @@ main h1 {
 main p {
     font-size: 1.2em;
 }
-
-section {
-    background: hsla(0, 0%, 100%, 0);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 800px;
-    color: #333;
-}
-
-section h2 {
-    color: #333; /* Измененный цвет */
-    border-bottom: none; /* Удаление нижней границы */
-}
-
 footer {
     background-color: #8ab6d6; /* Мягкий цвет */
     color: white;
