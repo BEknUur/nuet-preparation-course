@@ -39,7 +39,7 @@ body {
   main {
     padding: 60px 20px;
     text-align: center;
-    background: linear-gradient(rgba(0, 112, 243, 0.5), rgba(0, 112, 243, 0.5)), url('images/nu.jpg'); /* Наложение синего оттенка на изображение */
+    background: linear-gradient(rgba(0, 112, 243, 0.5), rgba(0, 112, 243, 0.5)), url('images/nu.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
