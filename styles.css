@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
+    background-color: #e0f7fa; /* Более голубой фон */
     color: #333;
     margin: 0;
     padding: 0;
@@ -9,7 +9,8 @@ body {
   header {
     background-color: #0070f3;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   nav ul {
@@ -27,20 +28,76 @@ body {
   nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ffcc00;
   }
   
   main {
-    padding: 20px;
+    padding: 60px 20px;
     text-align: center;
+    background: linear-gradient(rgba(0, 112, 243, 0.5), rgba(0, 112, 243, 0.5)), url('images/nu.jpg'); /* Наложение синего оттенка на изображение */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  main h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  main p {
+    font-size: 1.2em;
+  }
+  
+  section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  section h2 {
+    color: #0070f3;
   }
   
   footer {
     background-color: #0070f3;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
+    padding: 20px 0;
+    position: relative;
     bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 600px) {
+    header, footer {
+      padding: 10px 0;
+    }
+  
+    main {
+      padding: 40px 20px;
+    }
+  
+    nav ul li {
+      margin: 0 10px;
+    }
+  
+    main h1 {
+      font-size: 2em;
+    }
+  
+    main p {
+      font-size: 1em;
+    }
   }
   
