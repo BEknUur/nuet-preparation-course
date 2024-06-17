@@ -39,10 +39,8 @@ body {
   main {
     padding: 60px 20px;
     text-align: center;
-    background: linear-gradient(rgba(0, 112, 243, 0.5), rgba(0, 112, 243, 0.5)), url('images/nu.jpg');
+    background: url('images/nu.jpg') no-repeat center center;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
   }
@@ -62,6 +60,7 @@ body {
     border-radius: 10px;
     margin: 20px auto;
     max-width: 800px;
+    color: #333;
   }
   
   section h2 {
