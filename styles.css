@@ -77,6 +77,21 @@ main h1 {
 main p {
     font-size: 1.2em;
 }
+
+section {
+    background: hsla(0, 0%, 100%, 0);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    color: #333;
+}
+
+section h2 {
+    color: #333; /* Измененный цвет */
+    border-bottom: none; /* Удаление нижней границы */
+}
+
 footer {
     background-color: #8ab6d6; /* Мягкий цвет */
     color: white;
@@ -87,6 +102,39 @@ footer {
     width: 100%;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     flex-shrink: 0;
+}
+
+.contact-links {
+    margin: 20px 0;
+}
+
+.contact-links .social-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5em;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-links .social-link i {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.contact-links .social-link.instagram {
+    background-color: #E1306C;
+}
+
+.contact-links .social-link.telegram {
+    background-color: #0088cc;
+}
+
+.contact-links .social-link:hover {
+    transform: scale(1.1);
 }
 
 @media (max-width: 600px) {
@@ -108,5 +156,14 @@ footer {
 
     main p {
         font-size: 1em;
+    }
+
+    .contact-links .social-link {
+        font-size: 1.2em;
+        padding: 8px 16px;
+    }
+
+    .contact-links .social-link i {
+        font-size: 1.2em;
     }
 }
