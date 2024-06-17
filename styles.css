@@ -1,14 +1,127 @@
-body {
+/* Удаление отступов у body и html */
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
-main {
+/* Установка Flexbox для body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif; /* Измененный шрифт */
+    background-color: #e0f7fa; /* Голубой фон */
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8ab6d6; /* Мягкий цвет */
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    border-bottom: none; /* Удаление нижней границы */
+}
+
+nav ul li a:hover {
+    color: #f6caca;
+    border-bottom: none; /* Удаление нижней границы при наведении */
+}
+
+main {
+    padding: 60px 20px;
+    text-align: center;
     background: url('images/nu.jpg') no-repeat center center;
     background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    flex: 1; /* Заполнение оставшегося пространства */
+}
+
+main h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif; /* Измененный шрифт */
+}
+
+main p {
+    font-size: 1.2em;
+}
+
+section {
+    background: hsla(0, 0%, 100%, 0);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    color: #333;
+}
+
+section h2 {
+    color: #333; /* Измененный цвет */
+    border-bottom: none; /* Удаление нижней границы */
+}
+
+footer {
+    background-color: #8ab6d6; /* Мягкий цвет */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+    header, footer {
+        padding: 10px 0;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    main h1 {
+        font-size: 2em;
+    }
+
+    main p {
+        font-size: 1em;
+    }
 }
