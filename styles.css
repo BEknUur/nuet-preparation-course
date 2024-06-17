@@ -114,13 +114,16 @@ footer {
 .btn {
     display: inline-flex;
     align-items: center;
-    padding: 10px 20px;
-    font-size: 1.2em;
+    padding: 15px 30px;
+    font-size: 1.5em;
     font-weight: bold;
     text-decoration: none;
     color: white;
     border-radius: 30px;
-    transition: background-color 0.3s, transform 0.3s;
+    background-color: #007BFF;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .btn i {
@@ -138,6 +141,7 @@ footer {
 
 .btn:hover {
     transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 600px) {
@@ -167,8 +171,8 @@ footer {
     }
 
     .btn {
-        font-size: 1em;
-        padding: 8px 16px;
+        font-size: 1.2em;
+        padding: 10px 20px;
     }
 
     .btn i {
