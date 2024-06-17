@@ -106,34 +106,37 @@ footer {
 
 .contact-links {
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.contact-links .social-link {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 1.5em;
+.btn {
     display: inline-flex;
     align-items: center;
     padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
     border-radius: 30px;
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.contact-links .social-link i {
+.btn i {
     margin-right: 10px;
     font-size: 1.5em;
 }
 
-.contact-links .social-link.instagram {
+.btn-instagram {
     background-color: #E1306C;
 }
 
-.contact-links .social-link.telegram {
+.btn-telegram {
     background-color: #0088cc;
 }
 
-.contact-links .social-link:hover {
+.btn:hover {
     transform: scale(1.1);
 }
 
@@ -158,12 +161,17 @@ footer {
         font-size: 1em;
     }
 
-    .contact-links .social-link {
-        font-size: 1.2em;
+    .contact-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        font-size: 1em;
         padding: 8px 16px;
     }
 
-    .contact-links .social-link i {
+    .btn i {
         font-size: 1.2em;
     }
 }
