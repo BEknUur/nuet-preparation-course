@@ -30,10 +30,12 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
+    border-bottom: none; /* Удаление нижней границы */
 }
 
 nav ul li a:hover {
     color: #f6caca;
+    border-bottom: none; /* Удаление нижней границы при наведении */
 }
 
 main {
@@ -65,7 +67,8 @@ section {
 }
 
 section h2 {
-    color: #8ab6d6; /* Мягкий цвет */
+    color: #333; /* Измененный цвет */
+    border-bottom: none; /* Удаление нижней границы */
 }
 
 footer {
