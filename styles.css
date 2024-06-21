@@ -81,12 +81,6 @@ main {
 .content {
     position: relative;
     z-index: 2;
-    max-width: 800px;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 main h1 {
@@ -100,7 +94,6 @@ main p {
     margin: 10px 0;
     line-height: 1.6;
     font-family: 'Montserrat', sans-serif;
-    color: #333; /* Темный цвет текста */
 }
 
 .feature-list {
@@ -114,7 +107,6 @@ main p {
     padding-left: 20px;
     position: relative;
     font-family: 'Montserrat', sans-serif;
-    color: #333; /* Темный цвет текста */
 }
 
 .feature-list li::before {
