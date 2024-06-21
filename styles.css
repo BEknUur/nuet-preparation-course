@@ -90,43 +90,26 @@ main h1 {
     font-family: 'Oswald', sans-serif; /* Измененный шрифт */
 }
 
-.social-media-buttons {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.btn-social {
-    display: inline-flex;
-    align-items: center;
-    padding: 15px 30px;
+main p {
     font-size: 1.2em;
-    font-weight: bold;
-    text-decoration: none;
+    margin: 10px 0; /* Добавление отступов между параграфами */
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
     color: white;
-    border-radius: 30px;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+    background-color: #007BFF;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 10px;
 }
 
-.btn-social i {
-    margin-right: 10px;
-    font-size: 1.5em;
-}
-
-.btn-instagram {
-    background-color: #E1306C;
-}
-
-.btn-telegram {
-    background-color: #0088cc;
-}
-
-.btn-social:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 @media (max-width: 600px) {
@@ -146,17 +129,12 @@ main h1 {
         font-size: 2em;
     }
 
-    .social-media-buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .btn-social {
+    main p {
         font-size: 1em;
-        padding: 10px 20px;
     }
 
-    .btn-social i {
-        font-size: 1.2em;
+    .btn-primary {
+        font-size: 1em;
+        padding: 8px 16px;
     }
 }
