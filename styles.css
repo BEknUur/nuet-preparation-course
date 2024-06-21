@@ -282,48 +282,49 @@ main p, main ul {
     background-color: #0088cc;
 }
 
+/* Медиа-запросы для адаптивности */
 @media (max-width: 600px) {
-    header, footer {
-        padding: 10px 0;
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header img.logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     nav ul li {
-        margin: 0 10px;
+        margin: 5px 0;
     }
 
     main {
-        padding: 40px 20px;
+        padding: 20px 10px;
     }
 
     main h1 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     main h2 {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
-    .teacher-card {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .teacher-photo {
-        margin: 0 0 20px 0;
-    }
-
-    .teacher-details h2 {
-        font-size: 1.5em;
-        color:whitesmoke;
-    }
-
-    .teacher-details p {
-        font-size: 1em;
-        color:whitesmoke;
+    main p, main ul {
+        font-size: 0.9em;
     }
 
     .btn-primary {
         font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .social-media a {
+        font-size: 1em;
         padding: 8px 16px;
     }
 }
