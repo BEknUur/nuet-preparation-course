@@ -132,6 +132,46 @@ main ul li::before {
     transform: scale(1.05);
 }
 
+.contact-links {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    background-color: #007BFF;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.btn i {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.btn-instagram {
+    background-color: #E1306C;
+}
+
+.btn-telegram {
+    background-color: #0088cc;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
 @media (max-width: 600px) {
     header, footer {
         padding: 10px 0;
@@ -154,6 +194,20 @@ main ul li::before {
     }
 
     main ul li::before {
+        font-size: 1.2em;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        font-size: 1.2em;
+        padding: 10px 20px;
+    }
+
+    .btn i {
         font-size: 1.2em;
     }
 }
