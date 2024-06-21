@@ -219,16 +219,16 @@ main p, main ul {
     height: 30px;
 }
 
-.teacher-profile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    background-color: rgba(255, 255, 255, 0.8);
+/* Стили для карточки преподавателя */
+.teacher-card {
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .teacher-photo {
@@ -239,19 +239,21 @@ main p, main ul {
     margin-right: 20px;
 }
 
-.teacher-info {
-    max-width: 600px;
+.teacher-details {
+    text-align: left;
 }
 
-.teacher-info h2 {
+.teacher-details h2 {
     font-size: 1.8em;
     margin: 0;
+    color: #fff;
     font-family: 'Oswald', sans-serif;
 }
 
-.teacher-info p {
+.teacher-details p {
     font-size: 1.2em;
     margin: 5px 0;
+    color: #ddd;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -276,7 +278,7 @@ main p, main ul {
         font-size: 1.3em;
     }
 
-    .teacher-profile {
+    .teacher-card {
         flex-direction: column;
         align-items: center;
     }
@@ -285,11 +287,11 @@ main p, main ul {
         margin: 0 0 20px 0;
     }
 
-    .teacher-info h2 {
+    .teacher-details h2 {
         font-size: 1.5em;
     }
 
-    .teacher-info p {
+    .teacher-details p {
         font-size: 1em;
     }
 
