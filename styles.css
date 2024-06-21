@@ -22,7 +22,6 @@ header {
     background-color: #8ab6d6;
     color: white;
     padding: 10px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     flex-shrink: 0;
 }
 
@@ -179,7 +178,6 @@ main p, main ul {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
 }
 
@@ -198,7 +196,6 @@ main p, main ul {
     cursor: pointer;
     z-index: 2;
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -221,10 +218,9 @@ main p, main ul {
 
 /* Стили для карточки преподавателя */
 .teacher-card {
-    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -246,14 +242,14 @@ main p, main ul {
 .teacher-details h2 {
     font-size: 1.8em;
     margin: 0;
-    color: #fff;
+    color: #333;
     font-family: 'Oswald', sans-serif;
 }
 
 .teacher-details p {
     font-size: 1.2em;
     margin: 5px 0;
-    color: #ddd;
+    color: #555;
     font-family: 'Montserrat', sans-serif;
 }
 
