@@ -90,84 +90,20 @@ main h1 {
     font-family: 'Oswald', sans-serif; /* Измененный шрифт */
 }
 
-main p, main ul {
-    font-size: 1.2em;
-    margin: 10px 0; /* Добавление отступов между параграфами */
-}
-
-main ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-main ul li {
-    margin: 5px 0;
-    text-align: left; /* Выровнять по левому краю */
-    padding-left: 20px;
-    position: relative;
-}
-
-main ul li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: white;
-    font-size: 1.5em;
-    line-height: 1em;
-}
-
-.btn-primary {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    color: white;
-    background-color: #007BFF;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-}
-
-.contact-links {
-    margin: 20px 0;
+.social-media-links {
+    margin-top: 40px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
-.btn {
-    display: inline-flex;
-    align-items: center;
-    padding: 15px 30px;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    border-radius: 30px;
-    background-color: #007BFF;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+.social-icon {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.btn i {
-    margin-right: 10px;
-    font-size: 1.5em;
-}
-
-.btn-instagram {
-    background-color: #E1306C;
-}
-
-.btn-telegram {
-    background-color: #0088cc;
-}
-
-.btn:hover {
+.social-icon:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
@@ -189,25 +125,13 @@ main ul li::before {
         font-size: 2em;
     }
 
-    main p, main ul {
-        font-size: 1em;
-    }
-
-    main ul li::before {
-        font-size: 1.2em;
-    }
-
-    .contact-links {
+    .social-media-links {
         flex-direction: column;
         gap: 10px;
     }
 
-    .btn {
-        font-size: 1.2em;
-        padding: 10px 20px;
-    }
-
-    .btn i {
-        font-size: 1.2em;
+    .social-icon {
+        width: 50px;
+        height: 50px;
     }
 }
