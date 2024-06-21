@@ -82,103 +82,51 @@ main {
 .content {
     position: relative;
     z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-main h1 {
+h1 {
+    font-family: 'Oswald', sans-serif; /* Измененный шрифт */
     font-size: 2.5em;
     margin-bottom: 20px;
-    font-family: 'Oswald', sans-serif; /* Измененный шрифт */
+    color: #333;
+    text-align: center;
 }
 
-main p {
+h2 {
+    font-family: 'Oswald', sans-serif; /* Измененный шрифт */
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #007BFF;
+}
+
+p {
     font-size: 1.2em;
+    line-height: 1.6;
     margin: 10px 0; /* Добавление отступов между параграфами */
 }
 
-.results {
-    margin-top: 20px;
-}
-
-.results-list {
-    list-style-type: none; /* Убираем маркеры списка */
-    padding: 0; /* Убираем отступы */
-}
-
-.results-list li {
-    margin-bottom: 10px; /* Добавляем отступы между элементами списка */
-}
-
-.students {
-    margin-top: 40px;
-}
-
-.carousel {
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.carousel-track-container {
+.features {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
 }
 
-.carousel-track {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-}
-
-.carousel-slide {
-    min-width: 100%;
-    transition: transform 0.3s ease-in-out;
-}
-
-.carousel-image {
-    width: 100%;
-    height: auto;
+.feature-item {
+    flex: 1 1 calc(50% - 40px);
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
 }
 
-.carousel-image:hover {
-    transform: scale(1.05);
-}
-
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #ffffffaa; /* Полупрозрачный белый фон */
-    border: none;
-    color: #333; /* Темный цвет для текста */
-    padding: 10px;
-    cursor: pointer;
-    z-index: 2;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.carousel-button.prev {
-    left: 10px;
-}
-
-.carousel-button.next {
-    right: 10px;
-}
-
-.carousel-button:hover {
-    background-color: #ffffffdd; /* Более светлый полупрозрачный фон */
-    transform: scale(1.1);
-}
-
-.spacer {
-    height: 30px; /* Высота пустого пространства */
+.feature-item h2 {
+    margin-top: 0;
 }
 
 .btn-primary {
@@ -190,7 +138,8 @@ main p {
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
-    margin-top: 20px; /* Отступ сверху */
+    text-align: center;
+    margin-top: 20px;
 }
 
 .btn-primary:hover {
@@ -203,24 +152,29 @@ main p {
         padding: 10px 0;
     }
 
-    main {
-        padding: 40px 20px;
-    }
-
     nav ul li {
         margin: 0 10px;
     }
 
-    main h1 {
+    h1 {
         font-size: 2em;
     }
 
-    main p {
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
         font-size: 1em;
     }
 
-    .carousel-slide {
-        min-width: 100%;
+    .features {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .feature-item {
+        flex: 1 1 100%;
     }
 
     .btn-primary {
