@@ -284,10 +284,12 @@ main p, main ul {
 
     .teacher-details h2 {
         font-size: 1.5em;
+        color:whitesmoke;
     }
 
     .teacher-details p {
         font-size: 1em;
+        color:whitesmoke;
     }
 
     .btn-primary {
