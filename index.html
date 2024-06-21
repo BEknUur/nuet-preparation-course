@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KD Academy</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,7 +13,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Главная</a></li>
-        <li><a href="about.html">О курсе</a></li>
+        <li><a href="about.html">О курсе</а></li>
         <li><a href="teachers.html">Преподаватели</a></li>
         <li><a href="contact.html">Контакты</a></li>
       </ul>
@@ -38,21 +37,27 @@
         </ul>
       </div>
 
-      <!-- Блок с фотографиями учеников (галерея) -->
+      <!-- Блок с фотографиями учеников (карусель) -->
       <div class="students">
         <h2>Наши ученики</h2>
-        <div class="gallery">
-          <a href="images/student1.jpg" data-lightbox="students" data-title="Student 1"><img src="images/1.jpg" alt="Student 1"></a>
-          <a href="images/student2.jpg" data-lightbox="students" data-title="Student 2"><img src="images/2.jpg" alt="Student 2"></a>
-          <a href="images/student3.jpg" data-lightbox="students" data-title="Student 3"><img src="images/3.jpg" alt="Student 3"></a>
-          <a href="images/student4.jpg" data-lightbox="students" data-title="Student 4"><img src="images/4.jpg" alt="Student 4"></a>
-          <a href="images/student5.jpg" data-lightbox="students" data-title="Student 5"><img src="images/5.jpg" alt="Student 5"></a>
-          <a href="images/student6.jpg" data-lightbox="students" data-title="Student 6"><img src="images/6.jpg" alt="Student 6"></a>
-          <a href="images/student7.jpg" data-lightbox="students" data-title="Student 7"><img src="images/7.jpg" alt="Student 7"></a>
-          <a href="images/student8.jpg" data-lightbox="students" data-title="Student 8"><img src="images/8.jpg" alt="Student 8"></a>
-          <a href="images/student9.jpg" data-lightbox="students" data-title="Student 9"><img src="images/9.jpg" alt="Student 9"></a>
-          <a href="images/student10.jpg" data-lightbox="students" data-title="Student 10"><img src="images/10.jpg" alt="Student 10"></a>
-          <a href="images/student11.jpg" data-lightbox="students" data-title="Student 11"><img src="images/11.jpg" alt="Student 11"></a>
+        <div class="carousel">
+          <button class="carousel-button prev">&lt;</button>
+          <div class="carousel-track-container">
+            <ul class="carousel-track">
+              <li class="carousel-slide current-slide"><img class="carousel-image" src="images/1.jpg" alt="Student 1"></li>
+              <li class="carousel-slide"><img class="carousel-image" src="images/2.jpg" alt="Student 2"></li>
+              <li class="carousel-slide"><img class="carousel-image" src="images/3.jpg" alt="Student 3"></li>
+              <li class="carousel-slide"><img class="carousel-image" src="images/4.jpg" alt="Student 4"></li>
+              <li class="carousel-slide"><img class="carousel-image" src="images/5.jpg" alt="Student 5"></li>
+              <li class="carousel-slide"><img class="carousel-image" src="images/6.jpg" alt="Student 6"></li>
+              <li class="carousel-slide"><img class="carousel-image" src="images/7.jpg" alt="Student 7"></li>
+              <li class="carousel-slide"><img class="carousel-image" src="images/8.jpg" alt="Student 8"></li>
+              <li class="carousel-slide"><img class="carousel-image" src="images/9.jpg" alt="Student 9"></li>
+              <li class="carousel-slide"><img class="carousel-image" src="images/10.jpg" alt="Student 10"></li>
+              <li class="carousel-slide"><img class="carousel-image" src="images/11.jpg" alt="Student 11"></li>
+            </ul>
+          </div>
+          <button class="carousel-button next">&gt;</button>
         </div>
       </div>
       
@@ -60,6 +65,7 @@
       <a href="about.html" class="btn btn-primary">Узнать больше</a>
     </div>
   </main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+
