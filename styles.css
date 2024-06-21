@@ -90,9 +90,30 @@ main h1 {
     font-family: 'Oswald', sans-serif; /* Измененный шрифт */
 }
 
-main p {
+main p, main ul {
     font-size: 1.2em;
     margin: 10px 0; /* Добавление отступов между параграфами */
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main ul li {
+    margin: 5px 0;
+    text-align: left; /* Выровнять по левому краю */
+    padding-left: 20px;
+    position: relative;
+}
+
+main ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1em;
 }
 
 .btn-primary {
@@ -109,60 +130,6 @@ main p {
 .btn-primary:hover {
     background-color: #0056b3;
     transform: scale(1.05);
-}
-
-section {
-    background: hsla(0, 0%, 100%, 0);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 800px;
-    color: #333;
-}
-
-section h2 {
-    color: #333; /* Измененный цвет */
-    border-bottom: none; /* Удаление нижней границы */
-}
-
-.contact-links {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.btn {
-    display: inline-flex;
-    align-items: center;
-    padding: 15px 30px;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    border-radius: 30px;
-    background-color: #007BFF;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
-
-.btn i {
-    margin-right: 10px;
-    font-size: 1.5em;
-}
-
-.btn-instagram {
-    background-color: #E1306C;
-}
-
-.btn-telegram {
-    background-color: #0088cc;
-}
-
-.btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 600px) {
@@ -182,21 +149,11 @@ section h2 {
         font-size: 2em;
     }
 
-    main p {
+    main p, main ul {
         font-size: 1em;
     }
 
-    .contact-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .btn {
-        font-size: 1.2em;
-        padding: 10px 20px;
-    }
-
-    .btn i {
+    main ul li::before {
         font-size: 1.2em;
     }
 }
