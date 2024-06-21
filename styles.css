@@ -1,18 +1,17 @@
-/* Удаление отступов у body и html */
+
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
-/* Установка Flexbox для body */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
     font-family: 'Montserrat', sans-serif;
-    background-color: #c0d8eb; /* Темнее голубой фон */
-    color: #fff; /* Сделать текст белым */
+    background-color: #c0d8eb; 
+    color: #fff; 
 }
 
 header {
@@ -73,7 +72,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
@@ -109,7 +108,7 @@ main p, main ul {
 .feature-list li {
     margin-bottom: 10px;
     font-size: 1em;
-    padding-left: 0; /* Убираем отступ */
+    padding-left: 0; 
     position: relative;
     font-family: 'Montserrat', sans-serif;
 }
@@ -216,7 +215,7 @@ main p, main ul {
     height: 30px;
 }
 
-/* Стили для карточки преподавателя */
+
 .teacher-card {
     padding: 20px;
     border-radius: 10px;
@@ -241,18 +240,18 @@ main p, main ul {
 .teacher-details h2 {
     font-size: 1.8em;
     margin: 0;
-    color: white; /* Сделать текст белым */
+    color: white; 
     font-family: 'Oswald', sans-serif;
 }
 
 .teacher-details p {
     font-size: 1.2em;
     margin: 5px 0;
-    color: white; /* Сделать текст белым */
+    color: white; 
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Стили для социальных сетей */
+
 .social-media {
     margin-top: 40px;
 }
@@ -282,7 +281,7 @@ main p, main ul {
     background-color: #0088cc;
 }
 
-/* Медиа-запросы для адаптивности */
+
 @media (max-width: 600px) {
     header {
         flex-direction: column;
