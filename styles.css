@@ -99,6 +99,15 @@ main p {
     margin-top: 20px;
 }
 
+.results-list {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+}
+
+.results-list li {
+    margin-bottom: 10px; /* Добавляем отступы между элементами списка */
+}
+
 .students {
     margin-top: 40px;
 }
@@ -144,12 +153,15 @@ main p {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #ffffffaa; /* Полупрозрачный белый фон */
     border: none;
-    color: white;
+    color: #333; /* Темный цвет для текста */
     padding: 10px;
     cursor: pointer;
     z-index: 2;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .carousel-button.prev {
@@ -161,7 +173,8 @@ main p {
 }
 
 .carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #ffffffdd; /* Более светлый полупрозрачный фон */
+    transform: scale(1.1);
 }
 
 .spacer {
