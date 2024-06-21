@@ -1,17 +1,18 @@
-
+/* Удаление отступов у body и html */
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
+/* Установка Flexbox для body */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
     font-family: 'Montserrat', sans-serif;
-    background-color: #c0d8eb; 
-    color: #fff; 
+    background-color: #c0d8eb; /* Темнее голубой фон */
+    color: #fff; /* Сделать текст белым */
 }
 
 header {
@@ -72,7 +73,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
     z-index: 1;
 }
 
@@ -108,7 +109,7 @@ main p, main ul {
 .feature-list li {
     margin-bottom: 10px;
     font-size: 1em;
-    padding-left: 0; 
+    padding-left: 0; /* Убираем отступ */
     position: relative;
     font-family: 'Montserrat', sans-serif;
 }
@@ -215,7 +216,7 @@ main p, main ul {
     height: 30px;
 }
 
-
+/* Стили для карточки преподавателя */
 .teacher-card {
     padding: 20px;
     border-radius: 10px;
@@ -240,18 +241,18 @@ main p, main ul {
 .teacher-details h2 {
     font-size: 1.8em;
     margin: 0;
-    color: white; 
+    color: white; /* Сделать текст белым */
     font-family: 'Oswald', sans-serif;
 }
 
 .teacher-details p {
     font-size: 1.2em;
     margin: 5px 0;
-    color: white; 
+    color: white; /* Сделать текст белым */
     font-family: 'Montserrat', sans-serif;
 }
 
-
+/* Стили для социальных сетей */
 .social-media {
     margin-top: 40px;
 }
@@ -281,49 +282,48 @@ main p, main ul {
     background-color: #0088cc;
 }
 
-
 @media (max-width: 600px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    header img.logo {
-        margin-bottom: 10px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
+    header, footer {
+        padding: 10px 0;
     }
 
     nav ul li {
-        margin: 5px 0;
+        margin: 0 10px;
     }
 
     main {
-        padding: 20px 10px;
+        padding: 40px 20px;
     }
 
     main h1 {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     main h2 {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
-    main p, main ul {
-        font-size: 0.9em;
+    .teacher-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .teacher-photo {
+        margin: 0 0 20px 0;
+    }
+
+    .teacher-details h2 {
+        font-size: 1.5em;
+        color:whitesmoke;
+    }
+
+    .teacher-details p {
+        font-size: 1em;
+        color:whitesmoke;
     }
 
     .btn-primary {
         font-size: 0.9em;
-        padding: 8px 16px;
-    }
-
-    .social-media a {
-        font-size: 1em;
         padding: 8px 16px;
     }
 }
