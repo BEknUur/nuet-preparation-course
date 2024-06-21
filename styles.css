@@ -62,11 +62,26 @@ main {
     position: relative;
     padding: 60px 20px;
     text-align: center;
-    background: url('images/one.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
     flex: 1; /* Заполнение оставшегося пространства */
+}
+
+.main-index {
+    background: url('images/one.jpg') no-repeat center center; /* Обновленный фон для главной */
+}
+
+.main-about {
+    background: url('images/one.jpg') no-repeat center center; /* Обновленный фон для о курсе */
+}
+
+.main-teachers {
+    background: url('images/two.jpg') no-repeat center center; /* Обновленный фон для преподавателей */
+}
+
+.main-contact {
+    background: url('images/nu.jpg') no-repeat center center; /* Обновленный фон для контактов */
 }
 
 .overlay {
@@ -111,7 +126,7 @@ main p {
     transform: scale(1.05);
 }
 
-section {
+.section {
     background: hsla(0, 0%, 100%, 0);
     padding: 20px;
     border-radius: 10px;
@@ -120,7 +135,7 @@ section {
     color: #333;
 }
 
-section h2 {
+.section h2 {
     color: #333; /* Измененный цвет */
     border-bottom: none; /* Удаление нижней границы */
 }
