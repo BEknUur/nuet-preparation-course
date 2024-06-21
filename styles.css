@@ -74,13 +74,13 @@ main {
 }
 
 main h1 {
-    font-size: 2.5em;
+    font-size: 2em; /* Уменьшенный размер шрифта */
     margin-bottom: 20px;
     font-family: 'Oswald', sans-serif;
 }
 
 main p {
-    font-size: 1.2em;
+    font-size: 1em; /* Уменьшенный размер шрифта */
     margin: 10px 0;
     line-height: 1.6;
     font-family: 'Montserrat', sans-serif;
@@ -93,7 +93,7 @@ main p {
 
 .feature-list li {
     margin-bottom: 10px;
-    font-size: 1.2em;
+    font-size: 1em; /* Уменьшенный размер шрифта */
     padding-left: 20px;
     position: relative;
     font-family: 'Montserrat', sans-serif;
@@ -111,7 +111,7 @@ main p {
 .btn-primary {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 1.2em;
+    font-size: 1em; /* Уменьшенный размер шрифта */
     color: white;
     background-color: #007BFF;
     border-radius: 5px;
@@ -226,19 +226,19 @@ main p {
     }
 
     main h1 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     main p {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .feature-list li {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .btn-primary {
-        font-size: 1em;
+        font-size: 0.9em;
         padding: 8px 16px;
     }
 }
