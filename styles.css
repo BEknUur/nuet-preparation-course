@@ -89,7 +89,13 @@ main h1 {
     font-family: 'Oswald', sans-serif;
 }
 
-main p {
+main h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+main p, main ul {
     font-size: 1em;
     margin: 10px 0;
     line-height: 1.6;
@@ -136,92 +142,6 @@ main p {
     transform: scale(1.05);
 }
 
-.results {
-    margin-top: 20px;
-}
-
-.results-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.results-list li {
-    margin-bottom: 10px;
-}
-
-.students {
-    margin-top: 40px;
-}
-
-.carousel {
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.carousel-track-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
-}
-
-.carousel-track {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-}
-
-.carousel-slide {
-    min-width: 100%;
-    transition: transform 0.3s ease-in-out;
-}
-
-.carousel-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-}
-
-.carousel-image:hover {
-    transform: scale(1.05);
-}
-
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #ffffffaa;
-    border: none;
-    color: #333;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 2;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.carousel-button.prev {
-    left: 10px;
-}
-
-.carousel-button.next {
-    right: 10px;
-}
-
-.carousel-button:hover {
-    background-color: #ffffffdd;
-    transform: scale(1.1);
-}
-
-.spacer {
-    height: 30px;
-}
-
 @media (max-width: 600px) {
     header, footer {
         padding: 10px 0;
@@ -239,7 +159,11 @@ main p {
         font-size: 1.8em;
     }
 
-    main p {
+    main h2 {
+        font-size: 1.3em;
+    }
+
+    main p, main ul {
         font-size: 0.9em;
     }
 
