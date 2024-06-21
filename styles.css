@@ -95,6 +95,33 @@ main p {
     margin: 10px 0; /* Добавление отступов между параграфами */
 }
 
+.results {
+    margin-top: 20px;
+}
+
+.students {
+    margin-top: 40px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
 .spacer {
     height: 30px; /* Высота пустого пространства */
 }
@@ -135,6 +162,10 @@ main p {
 
     main p {
         font-size: 1em;
+    }
+
+    .gallery img {
+        width: 100%;
     }
 
     .btn-primary {
