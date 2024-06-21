@@ -12,7 +12,7 @@ body {
     min-height: 100%;
     font-family: 'Montserrat', sans-serif;
     background-color: #c0d8eb; /* Темнее голубой фон */
-    color: #333;
+    color: #fff; /* Сделать текст белым */
 }
 
 header {
@@ -241,14 +241,14 @@ main p, main ul {
 .teacher-details h2 {
     font-size: 1.8em;
     margin: 0;
-    color: #333;
+    color: white; /* Сделать текст белым */
     font-family: 'Oswald', sans-serif;
 }
 
 .teacher-details p {
     font-size: 1.2em;
     margin: 5px 0;
-    color: #555;
+    color: white; /* Сделать текст белым */
     font-family: 'Montserrat', sans-serif;
 }
 
