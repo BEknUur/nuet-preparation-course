@@ -103,32 +103,19 @@ main p {
     margin-top: 40px;
 }
 
-.carousel {
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
 }
 
-.carousel-track-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+.gallery a {
+    display: block;
     width: 100%;
+    height: 100%;
 }
 
-.carousel-track {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-}
-
-.carousel-slide {
-    min-width: 100%;
-    transition: transform 0.3s ease-in-out;
-}
-
-.carousel-image {
+.gallery img {
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -136,32 +123,8 @@ main p {
     transition: transform 0.3s;
 }
 
-.carousel-image:hover {
+.gallery img:hover {
     transform: scale(1.05);
-}
-
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.carousel-button.prev {
-    left: 10px;
-}
-
-.carousel-button.next {
-    right: 10px;
-}
-
-.carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .spacer {
@@ -206,8 +169,8 @@ main p {
         font-size: 1em;
     }
 
-    .carousel-slide {
-        min-width: 100%;
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
 
     .btn-primary {
